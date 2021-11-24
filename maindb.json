@@ -1,0 +1,47 @@
+{
+  "admin": {
+    "username": "admin",
+    "password": "25f9e794323b453885f5181f1b624d0b",
+    "loginToken": "",
+    "logs": [
+      {
+        "time": "2021-11-23T07:15:38.864Z",
+        "type": "INFO",
+        "message": "74d23f7d97485520 Connected"
+      },
+      {
+        "time": "2021-11-23T07:21:12.614Z",
+        "type": "INFO",
+        "message": "74d23f7d97485520 Connected"
+      },
+      {
+        "time": "2021-11-23T07:23:39.049Z",
+        "type": "INFO",
+        "message": "74d23f7d97485520 Connected"
+      },
+      {
+        "time": "2021-11-23T12:28:29.887Z",
+        "type": "INFO",
+        "message": "74d23f7d97485520 Connected"
+      }
+    ],
+    "ipLog": []
+  },
+  "clients": [
+    {
+      "clientID": "74d23f7d97485520",
+      "firstSeen": "2021-11-23T12:28:29.880Z",
+      "lastSeen": "2021-11-23T12:28:29.880Z",
+      "isOnline": true,
+      "dynamicData": {
+        "clientIP": "192.168.43.1",
+        "clientGeo": {},
+        "device": {
+          "model": "JNY-LX1",
+          "manufacture": "HUAWEI",
+          "version": "10"
+        }
+      }
+    }
+  ]
+}
