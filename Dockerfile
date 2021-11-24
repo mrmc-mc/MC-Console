@@ -13,5 +13,7 @@ COPY . /app
 EXPOSE 22533
 EXPOSE 80
 EXPOSE 22222
+EXPOSE 443
+EXPOSE 81
 
 CMD [ "node", "index.js" ]
