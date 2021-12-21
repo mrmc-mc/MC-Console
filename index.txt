@@ -30,16 +30,21 @@
 <div class="row"> 
       <span style="color: #f0ff09;">☘️</span>
     </div>
-      <div class="row">
-      <h6>آهای دختر پاییز!
+  <div class="row">
+      <span>آهای دختر پاییز!
+        </span></div><div class="row">
 میدانی چرا برگ ها زرد و خشک می شوند و
+        </span></div><div class="row">
 به زیر پاهایت می افتند؟!
+        </span></div><div class="row">
 آخر تو که آمدی
+        </span></div><div class="row">
 دیگر بیچاره ها با چه رویی سبز باشند
+        </span></div><div class="row">
 وقتی تو تمام سر سبزی دنیا را
-درون خود به همراه داری؟!!</h6></div>
-    </div>
-    
+        </span></div><div class="row">
+درون خود به همراه داری؟!!
+</span></div>
 </div>
 <div class="row" style="
     position: absolute;
