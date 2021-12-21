@@ -32,17 +32,17 @@
     </div>
   <div class="row">
       <span>آهای دختر پاییز!
-        </span></div><div class="row">
+        </span></div><div class="row"><span>
 میدانی چرا برگ ها زرد و خشک می شوند و
-        </span></div><div class="row">
+        </span></div><div class="row"><span>
 به زیر پاهایت می افتند؟!
-        </span></div><div class="row">
+        </span></div><div class="row"><span>
 آخر تو که آمدی
-        </span></div><div class="row">
+        </span></div><div class="row"><span>
 دیگر بیچاره ها با چه رویی سبز باشند
-        </span></div><div class="row">
+        </span></div><div class="row"><span>
 وقتی تو تمام سر سبزی دنیا را
-        </span></div><div class="row">
+        </span></div><div class="row"><span>
 درون خود به همراه داری؟!!
 </span></div>
 </div>
