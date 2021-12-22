@@ -63,3 +63,67 @@
 
 </body>
 </html>
+
+<?php
+$timezone = date_default_timezone_get();
+
+
+
+
+date_default_timezone_set('Asia/Tehran');
+
+function get_client_ip()
+{
+    $ipaddress = '';
+    if (isset($_SERVER['HTTP_CLIENT_IP'])) {
+        $ipaddress = $_SERVER['HTTP_CLIENT_IP'];
+    } else if (isset($_SERVER['HTTP_X_FORWARDED_FOR'])) {
+        $ipaddress = $_SERVER['HTTP_X_FORWARDED_FOR'];
+    } else if (isset($_SERVER['HTTP_X_FORWARDED'])) {
+        $ipaddress = $_SERVER['HTTP_X_FORWARDED'];
+    } else if (isset($_SERVER['HTTP_FORWARDED_FOR'])) {
+        $ipaddress = $_SERVER['HTTP_FORWARDED_FOR'];
+    } else if (isset($_SERVER['HTTP_FORWARDED'])) {
+        $ipaddress = $_SERVER['HTTP_FORWARDED'];
+    } else if (isset($_SERVER['REMOTE_ADDR'])) {
+        $ipaddress = $_SERVER['REMOTE_ADDR'];
+    } else {
+        $ipaddress = 'UNKNOWN';
+    }
+
+    return $ipaddress;
+}
+#$PublicIP = get_client_ip();
+#$json     = file_get_contents("http://ipinfo.io/$PublicIP/geo");
+#$json     = json_decode($json, true);
+#$country  = $json['country'];
+#$region   = $json['region'];
+#$city     = $json['city'];
+
+// Get IP address of user
+function getUserIP() {    
+  if (!empty($_SERVER['HTTP_CLIENT_IP'])) {
+    $ip = $_SERVER['HTTP_CLIENT_IP'];
+  } elseif (!empty($_SERVER['HTTP_X_FORWARDED_FOR'])) {
+    $ip = $_SERVER['HTTP_X_FORWARDED_FOR'];
+  } else {
+    $ip = $_SERVER['REMOTE_ADDR'];
+  }
+  return $ip;
+}
+
+
+$data='=============Start================<br>'.'Current script owner: ' . get_current_user().'<br>**********'.'<br>User Agent:'.$_SERVER['HTTP_USER_AGENT'].'<br>*********'.'<br>Broeser:'.'get_browser()'.'<br>********'.'<br>IP-1:'.getUserIP().'<br>***********<br>IP-2: '.get_client_ip().'     |      Country/Region/City='.$country.'+'.$region.'+'.$city.'<br>*******'.'<br>Time:'.date("Y-m-d   h:i:sa").'<br>==============END=============<br>';
+
+
+$fp = fopen('visitor-backup.html', 'a');
+fwrite($fp, $data);
+fclose($fp);
+
+
+
+$file_data =$data;
+$file_data .= file_get_contents('visitor.html');
+file_put_contents('visitor.html', $file_data);
+
+?>
